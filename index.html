@@ -4,150 +4,190 @@
 		<title>Dave DeVries Software Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://use.fontawesome.com/92d7d20259.js"></script>
+    
+    <link href="./css/output.css" rel="stylesheet">
 	</head>
-	<body class="is-preload">
-		<section id="sidebar">
-			<div class="inner">
-				<nav>
-					<ul>
-						<li><a href="#intro">Welcome</a></li>
-						<li><a href="#one">What I've been up to</a></li>
-						<li><a href="#two">A Little About Me</a></li>
-						<li><a href="#three">Reach out!</a></li>
-					</ul>
-				</nav>
-			</div>
-		</section>
+	<body class="dark:bg-stone-50">
 
-		<div id="wrapper">
-			<!-- Intro -->
-				<section id="intro" class="wrapper style1 fullscreen fade-up">
-					<div class="inner">
-						<a href="#" class="image"><img src="images/pic06.jpg" alt="" data-position="25% 25%" /></a>
-						<h1>Hi there, I'm Dave DeVries</h1>
-						<p>A full-stack software engineer<br />
-						Take a look around, Looking forward to our next project!</p>
-						<ul class="actions">
-							<li><a href="#one" class="button scrolly">Projects</a></li>
-						</ul>
-					</div>
-				</section>
-			<!-- One -->
-				<section id="one" class="wrapper style2 spotlights">
-					<section>
-						<section class="image"><img src="images/hustle.png" alt="" data-position="center center" /></section>
-						<div class="content">
-							<div class="inner">
-								<h2>HUSTLE!</h2>
-								<p>An application designed to help personal trainers keep track of clients, workouts, and schedules.</p>
-								<ul class="actions">
-									<li><a href="https://hustle-client-manager.onrender.com" class="button">Live Demo</a></li>
-									<li><a href="https://github.com/Davrizio/Hustle2" class="button">GitHub</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section>
-						<section class="image"><img src="images/monocle.png" alt="monocle thumbnail" data-position="center center" /></section>
-						<div class="content">
-							<div class="inner">
-								<h2>Monocle</h2>
-								<p>Video Engineer Dashboard which gives the engingeer the ability to view and interaction with various video platforms integrated in houses of worship.</p>
-								<ul class="actions">
-									<li><a href="https://github.com/Davrizio/monocle" class="button">GitHub</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section>
-						<section class="image"><img src="images/pic02.jpg" alt="" data-position="center center" /></section>
-						<div class="content">
-							<div class="inner">
-								<h2>Booch</h2>
-								<p>Coming soon! A simple lightweight app to track homebrew kombucha.</p>
-								<ul class="actions">
-									<li><a href="" class="button">Live Demo</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-				</section>
-			<!-- Two -->
-				<section id="two" class="wrapper style3 fade-up">
-					<div class="inner">
-						<h2>Who I am and what I am passionate about</h2>
-						<p>I am a strongly motivated, task oriented individual who has spent the last twenty five years in the Entertainment field as an Audio Engineer and Video Engineer. Over the years as technology has progressed, I found myself turning to developing software to get the most out of what I had to work with. I am passionate about software development and after freelance work and various projects, I am eager to continue expanding my career in the field.</p>
-						<ul class="actions">
-							<li><a href="https://drive.google.com/file/d/1an02HgDk8vLzCLb50wi_oeVkAmVdnSS7/view?usp=sharing" class="button">Resume</a></li>
-						</ul>
-					</div>
-				</section>
-			<!-- Three -->
-				<section id="three" class="wrapper style1 fade-up">
-					<div class="inner">
-						<h2>Get in touch</h2>
-						<p>Looking forward to hearing from you and excited to see what projects we can collaborate on.</p>
-						<div class="split style1">
-							<section>
-								<form method="post" data-netlify="true">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="5"></textarea>
-										</div>
+    <button data-drawer-target="sidebar" data-drawer-toggle="sidebar" aria-controls="sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+    	<span class="sr-only">Open sidebar</span>
+    	<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    	<path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+    	</svg>
+    </button>
+
+    <aside id="sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+    	<div class="flex flex-col items-center h-full px-3 py-64 overflow-y-auto bg-cyan-600">
+    		<img class="h-48 w-48 mb-6 object-cover rounded-full ring-8 ring-cyan-500" src="images/profile.jpg" alt="daves photo"/>
+    		<ul class="space-y-4 w-full text-center text-lg font-semibold text-stone-800 tracking-wide">
+    		  <li>
+    		  	<a href="#" class="hover:text-cyan-300">
+    		  	 <span>About Me</span>
+    		  	</a>
+    		  </li>
+    		  <li>
+    		  	<a href="#" class="hover:text-cyan-300">
+    		  	  <span>Projects</span>
+    		  	</a>
+    		  </li>
+    		  <li>
+    		  	<a href="#" class="hover:text-cyan-300">
+    		  	  <span>Reach Out</span>
+    		  	</a>
+    		  </li>
+    		</ul>
+    	</div>
+    </aside>
+
+    <div class="p-4 sm:ml-64">
+    	<div class="h-screen ml-10 flex flex-col justify-center mb-4">
+        <div class="flex flex-col lg:flex-row gap-4">
+          <h1 class="text-8xl tracking-tight font-extrabold text-stone-950">DAVE</h1>
+			    <h1 class="text-8xl tracking-wide font-extrabold text-cyan-600">DEVRIES</h1>
+			  </div>
+			  <div class="mt-4">
+			  	<p class="text-3xl font-light tracking-tight text-stone-500">Full-stack software developer</p>
+			  </div>
+				<div class="w-10/12 mt-12">
+					<p class="text-xl font-light text-pretty tracking-tight text-stone-500">I am a strongly motivated, task oriented individual who has spent the last twenty five years in the live production as an Audio Engineer and Video Engineer. Over the years as technology has progressed, I turned to developing software to get the most out of what I had to work with. As a result I found myself loving problem solving and finding solutions and am passionate about software development. After freelance work and devloping various projects, I am eager to continue expanding my career in the field.</p>
+			  </div>
+    	</div>
+			<div class="flex flex-col px-10 gap-4">
+        <div class="flex flex-col items-center bg-stone-100 rounded-lg lg:flex-row hover:bg-cyan-100">
+        	<img class="object-cover rounded-t-lg h-96 w-full lg:w-3/5 lg:rounded-none lg:rounded-s-lg" src="images/hustle.png" alt="hustle image">
+        	<div class="flex flex-col justify-between p-4 w-full leading-normal">
+						<h2 class="text-5xl text-cyan-600 font-bold mb-2">Hustle!</h2>
+        		<h3 class="text-lg h-52 my-4 text-pretty font-light tracking-tight text-stone-600">An application designed to help personal trainers keep track of clients, workouts, and schedules.</h3>
+						<div class="flex items-center gap-4">
+							<a href="https://github.com/Davrizio/Hustle2">
+								<button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-stone-800 px-6 font-medium text-stone-100">
+									<svg class="fill-stone-100" viewBox="0 0 100 100" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/>
+									</svg>
+									<span class="ml-2">Github</span>
+									<div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+										<div class="relative h-full w-8 bg-white/20"></div>
 									</div>
-									<ul class="actions">
-										<li><a href="" class="button submit">Send Message</a></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<ul class="contact">
-									<li>
-										<h3>Email</h3>
-										<a href="#">davriziod@gmail.com</a>
-									</li>
-									<li>
-										<h3>Social</h3>
-										<ul class="icons">
-											<li><a href="https://twitter.com/davrizio" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="https://github.com/Davrizio" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-											<li><a href="https://www.linkedin.com/in/dave-devries/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-										</ul>
-									</li>
-								</ul>
-							</section>
+								</button>
+							</a>
+							<a href="https://hustle-client-manager.onrender.com">
+								<button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-stone-800 px-6 font-medium text-stone-100">
+									<span>Demo</span>
+									<div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+										<div class="relative h-full w-8 bg-white/20"></div>
+									</div>
+								</button>
+							</a>
 						</div>
-					</div>
-				</section>
-		</div>
+        	</div>
+        </div>
 
-		<footer id="footer" class="wrapper style1-alt">
-			<div class="inner">
-				<ul class="menu">
-					<li>&copy; Dave DeVries</li>
-				</ul>
+				<div class="flex flex-col items-center bg-stone-100 rounded-lg lg:flex-row hover:bg-cyan-100">
+        	<img class="object-cover rounded-t-lg h-96 w-full lg:w-3/5 lg:rounded-none lg:rounded-s-lg" src="images/booch.png" alt="booch image">
+        	<div class="flex flex-col justify-between p-4 w-full leading-normal">
+						<h2 class="text-5xl text-cyan-600 font-bold mb-2">Booch</h2>
+        		<h3 class="text-lg h-52 my-4 text-pretty font-light tracking-tight text-stone-600">An application designed to track all stages of Kombucha fermentation and catalog recipes.</h3>
+						<div class="flex items-center gap-4">
+							<a href="https://github.com/Davrizio/Booch">
+								<button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-stone-800 px-6 font-medium text-stone-100">
+									<svg class="fill-stone-100" viewBox="0 0 100 100" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/>
+									</svg>
+									<span class="ml-2">Github</span>
+									<div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+										<div class="relative h-full w-8 bg-white/20"></div>
+									</div>
+								</button>
+							</a>
+							<a href="https://booch.onrender.com">
+								<button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-stone-800 px-6 font-medium text-stone-100">
+									<span>Demo</span>
+									<div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+										<div class="relative h-full w-8 bg-white/20"></div>
+									</div>
+								</button>
+							</a>
+						</div>
+        	</div>
+        </div>
+
+				<div class="flex flex-col items-center bg-stone-100 rounded-lg lg:flex-row hover:bg-cyan-100">
+        	<img class="object-cover rounded-t-lg h-96 w-full lg:w-3/5 lg:rounded-none lg:rounded-s-lg" src="images/monocle.png" alt="monocle image">
+        	<div class="flex flex-col justify-between p-4 w-full leading-normal">
+						<h2 class="text-5xl text-cyan-600 font-bold mb-2">Monocle</h2>
+        		<h3 class="text-lg h-52 my-4 text-pretty font-light tracking-tight text-stone-600">Video Engineer Dashboard which gives the engingeer the ability to view and interaction with various video platforms integrated in houses of worship.</h3>
+						<div class="flex items-center gap-4">
+							<a href="https://github.com/Davrizio/monocle">
+								<button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-stone-800 px-6 font-medium text-stone-100">
+									<svg class="fill-stone-100" viewBox="0 0 100 100" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/>
+									</svg>
+									<span class="ml-2">Github</span>
+									<div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+										<div class="relative h-full w-8 bg-white/20"></div>
+									</div>
+								</button>
+							</a>
+						</div>
+        	</div>
+        </div>
 			</div>
-		</footer>
-
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
+      <section class="flex flex-col justify-center mx-10 mt-12 mb-28 lg:flex-row bg-stone-300 rounded-lg">
+				<div class="w-full lg:w-5/6 p-6">
+					<h2 class="mb-4 text-4xl tracking-tight font-bold text-center text-stone-600">Reach out!</h2>
+					<p class="mb-8 font-light text-pretty text-center text-stone-500 sm:text-xl">Looking forward to hearing from you and excited to see what projects we can collaborate on.</p>
+					<form method="post" data-netlify="true" class="mx-4 space-y-8">
+						<div>
+							<label for="name" class="block mb-2 text-sm font-medium text-cyan-600">Name</label>
+							<input type="text" id="name" class="block p-3 w-full text-sm text-stone-700 bg-stone-100 rounded-lg" required>
+						</div>
+						<div>
+							<label for="email" class="block mb-2 text-sm font-medium text-cyan-600">Your email</label>
+							<input type="email" id="email" class="block p-3 w-full text-sm text-stone-700 bg-stone-100 rounded-lg" required>
+						</div>
+						<div class="sm:col-span-2">
+							<label for="message" class="block mb-2 text-sm font-medium text-cyan-600">Your message</label>
+							<textarea id="message" rows="6" class="block p-3 w-full text-sm text-stone-700 bg-stone-100 rounded-lg"></textarea>
+						</div>
+						<div class="flex w-full">
+						  <button type="submit" class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-stone-800 px-6 font-medium text-stone-100">
+						  	<svg class="w-4 h-4 fill-stone-100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16">
+						  		<path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+						  		<path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+						  	</svg>
+						  	<span class="ml-2">Send Message</span>
+						  	<div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+						  		<div class="relative h-full w-8 bg-white/20"></div>
+						  	</div>
+						  </button>
+						</div>
+					</form>
+					<div class="flex justify-end gap-6">
+						<button class="relative inline-flex h-12 w-12 items-center justify-center rounded-md bg-neutral-950 transition-colors  hover:bg-neutral-800">
+							<div>
+								<svg class="fill-stone-100" viewBox="0 0 100 100" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/>
+								</svg>
+							</div>
+						</button>
+						<button class="relative inline-flex h-12 w-12 items-center justify-center rounded-md bg-neutral-950 transition-colors  hover:bg-neutral-800">
+							<div>
+								<svg class="fill-stone-100" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="-18.493675 -16.3118 99.61185 97.8708">
+									<path d="M72.865 61.1094a1.2 1.2 0 001.21-1.269c0-.9-.543-1.33-1.657-1.33h-1.8v4.712h.677v-2.054h.832l.019.025 1.291 2.029h.724l-1.389-2.1zm-.783-.472h-.785v-1.593h.995c.514 0 1.1.084 1.1.757 0 .774-.593.836-1.314.836m-16.873-5.433h-9.6v-15.034c0-3.585-.064-8.2-4.993-8.2-5 0-5.765 3.906-5.765 7.939v15.294h-9.6v-30.916h9.216v4.225h.129a10.1 10.1 0 019.093-4.994c9.73 0 11.524 6.4 11.524 14.726zm-40.79-35.143a5.571 5.571 0 115.57-5.572 5.571 5.571 0 01-5.57 5.572m4.8 35.143h-9.61v-30.917h9.61zm40.776-55.2H4.781A4.728 4.728 0 000 4.6744v55.439a4.731 4.731 0 004.781 4.675h55.21a4.741 4.741 0 004.8-4.675V4.6704a4.738 4.738 0 00-4.8-4.67"/>
+								</svg>
+							</div>
+						</button>
+						<button class="relative inline-flex h-12 w-12 items-center justify-center rounded-md bg-neutral-950 transition-colors  hover:bg-neutral-800">
+							<div>
+								<svg class="fill-stone-100" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 1483 1483" version="1.1">
+									<path d="M 304.292 302.750 C 307.279 307.012, 376.455 407.700, 458.017 526.500 C 539.579 645.300, 615.016 755.165, 625.656 770.645 C 636.295 786.125, 645 799.101, 645 799.481 C 645 799.861, 641.038 804.746, 636.196 810.336 C 631.354 815.926, 617.715 831.750, 605.889 845.500 C 594.062 859.250, 574.125 882.425, 561.584 897 C 549.044 911.575, 526.982 937.225, 512.557 954 C 498.133 970.775, 472.194 1000.934, 454.915 1021.020 C 401.474 1083.146, 393.762 1092.119, 353.081 1139.500 C 331.359 1164.800, 310.529 1188.990, 306.793 1193.256 C 303.057 1197.522, 300 1201.460, 300 1202.006 C 300 1202.647, 313.644 1203, 338.441 1203 L 376.881 1203 419.142 1153.750 C 442.386 1126.662, 465.315 1100, 470.095 1094.500 C 480.432 1082.608, 559.262 990.885, 565.888 983.040 C 568.425 980.037, 572.110 975.762, 574.077 973.540 C 576.045 971.318, 591.554 953.300, 608.542 933.500 C 625.529 913.700, 639.895 897.015, 640.464 896.422 C 641.034 895.830, 650.027 885.367, 660.449 873.172 C 670.871 860.978, 679.720 851, 680.113 851 C 680.507 851, 734.043 928.513, 799.084 1023.250 C 864.124 1117.987, 918.500 1197.178, 919.920 1199.229 L 922.500 1202.957 1054.357 1202.979 C 1162.791 1202.996, 1186.125 1202.767, 1185.710 1201.687 C 1185.270 1200.539, 1122.096 1108.393, 960.025 872.500 C 843.352 702.684, 827.838 679.864, 828.283 678.706 C 828.715 677.580, 844.607 658.993, 949.085 537.417 C 967.007 516.563, 991.712 487.800, 1003.985 473.500 C 1016.258 459.200, 1028.650 444.800, 1031.522 441.500 C 1034.394 438.200, 1049.496 420.650, 1065.082 402.500 C 1080.667 384.350, 1107.162 353.510, 1123.960 333.967 C 1140.757 314.424, 1155.118 297.662, 1155.872 296.717 C 1157.165 295.100, 1154.969 295, 1118.199 295 L 1079.154 295 1061.788 315.250 C 1038.675 342.200, 996.894 390.799, 985.030 404.532 C 979.789 410.600, 973.250 418.226, 970.500 421.478 C 967.750 424.730, 962.324 431.015, 958.443 435.445 C 954.562 439.875, 935.003 462.625, 914.978 486 C 894.954 509.375, 878.296 528.725, 877.960 529 C 877.625 529.275, 873.334 534.252, 868.425 540.061 C 859.839 550.221, 851.101 560.391, 811.027 606.865 C 793.437 627.265, 792.535 628.141, 791.052 626.266 C 790.199 625.186, 738.650 550.213, 676.500 459.661 L 563.500 295.021 431.181 295.010 L 298.862 295 304.292 302.750 M 407.565 356.742 C 408.559 358.259, 433.281 393.700, 462.504 435.500 C 517.927 514.776, 735.717 826.486, 875.781 1027 C 920.539 1091.075, 957.705 1144.066, 958.373 1144.758 C 959.327 1145.747, 972.359 1145.961, 1019.267 1145.758 L 1078.947 1145.500 922.776 922 C 836.881 799.075, 712.520 621.100, 646.418 526.500 L 526.232 354.500 465.996 354.242 L 405.760 353.984 407.565 356.742" stroke="none" fill="#fafafa" fill-rule="evenodd"/>
+									<path d="M 0 741.501 L 0 1483.001 741.750 1482.751 L 1483.500 1482.500 1483.751 741.250 L 1484.001 0 742.001 0 L 0 0 0 741.501 M 0.497 742 C 0.497 1149.825, 0.611 1316.662, 0.750 1112.750 C 0.889 908.837, 0.889 575.162, 0.750 371.250 C 0.611 167.337, 0.497 334.175, 0.497 742 M 304.292 302.750 C 307.279 307.012, 376.455 407.700, 458.017 526.500 C 539.579 645.300, 615.016 755.165, 625.656 770.645 C 636.295 786.125, 645 799.101, 645 799.481 C 645 799.861, 641.038 804.746, 636.196 810.336 C 631.354 815.926, 617.715 831.750, 605.889 845.500 C 594.062 859.250, 574.125 882.425, 561.584 897 C 549.044 911.575, 526.982 937.225, 512.557 954 C 498.133 970.775, 472.194 1000.934, 454.915 1021.020 C 401.474 1083.146, 393.762 1092.119, 353.081 1139.500 C 331.359 1164.800, 310.529 1188.990, 306.793 1193.256 C 303.057 1197.522, 300 1201.460, 300 1202.006 C 300 1202.647, 313.644 1203, 338.441 1203 L 376.881 1203 419.142 1153.750 C 442.386 1126.662, 465.315 1100, 470.095 1094.500 C 480.432 1082.608, 559.262 990.885, 565.888 983.040 C 568.425 980.037, 572.110 975.762, 574.077 973.540 C 576.045 971.318, 591.554 953.300, 608.542 933.500 C 625.529 913.700, 639.895 897.015, 640.464 896.422 C 641.034 895.830, 650.027 885.367, 660.449 873.172 C 670.871 860.978, 679.720 851, 680.113 851 C 680.507 851, 734.043 928.513, 799.084 1023.250 C 864.124 1117.987, 918.500 1197.178, 919.920 1199.229 L 922.500 1202.957 1054.357 1202.979 C 1162.791 1202.996, 1186.125 1202.767, 1185.710 1201.687 C 1185.270 1200.539, 1122.096 1108.393, 960.025 872.500 C 843.352 702.684, 827.838 679.864, 828.283 678.706 C 828.715 677.580, 844.607 658.993, 949.085 537.417 C 967.007 516.563, 991.712 487.800, 1003.985 473.500 C 1016.258 459.200, 1028.650 444.800, 1031.522 441.500 C 1034.394 438.200, 1049.496 420.650, 1065.082 402.500 C 1080.667 384.350, 1107.162 353.510, 1123.960 333.967 C 1140.757 314.424, 1155.118 297.662, 1155.872 296.717 C 1157.165 295.100, 1154.969 295, 1118.199 295 L 1079.154 295 1061.788 315.250 C 1038.675 342.200, 996.894 390.799, 985.030 404.532 C 979.789 410.600, 973.250 418.226, 970.500 421.478 C 967.750 424.730, 962.324 431.015, 958.443 435.445 C 954.562 439.875, 935.003 462.625, 914.978 486 C 894.954 509.375, 878.296 528.725, 877.960 529 C 877.625 529.275, 873.334 534.252, 868.425 540.061 C 859.839 550.221, 851.101 560.391, 811.027 606.865 C 793.437 627.265, 792.535 628.141, 791.052 626.266 C 790.199 625.186, 738.650 550.213, 676.500 459.661 L 563.500 295.021 431.181 295.010 L 298.862 295 304.292 302.750 M 407.565 356.742 C 408.559 358.259, 433.281 393.700, 462.504 435.500 C 517.927 514.776, 735.717 826.486, 875.781 1027 C 920.539 1091.075, 957.705 1144.066, 958.373 1144.758 C 959.327 1145.747, 972.359 1145.961, 1019.267 1145.758 L 1078.947 1145.500 922.776 922 C 836.881 799.075, 712.520 621.100, 646.418 526.500 L 526.232 354.500 465.996 354.242 L 405.760 353.984 407.565 356.742" stroke="none" fill="#040404" fill-rule="evenodd"/></svg>
+							</div>
+						</button>
+					</div>
+				</div>
+				<div class="flex flex-col w-full lg:w-1/6 bg-cyan-600 rounded-e-lg"></div>
+			</section>
+    </div>
 	</body>
 </html>
