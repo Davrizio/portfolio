@@ -2,7 +2,26 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ['Montserrat']
+      },
+      animation: {
+        fadeinup: "fadeinup 0.8s ease-in-out"
+      },
+      keyframes: {
+        fadeinup: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(20px)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)"
+          }
+        }
+      }
+    },
   },
   plugins: [],
 }
